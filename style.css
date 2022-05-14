@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(250,250,250);
+}
+.instagram-phone{
+   display: flex;
+    
+    
+}
+
+.borda:nth-child(2){
+   
+    float: top; 
+    position: absolute;
+    margin-left: 13.05rem;
+    margin-top: 2.1rem;
+}
+
+.slid{
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animacao{
+ 25%{
+     opacity: 1;
+ }
+ 50%{
+     opacity: 0;
+ }
+}
+
+.slid:nth-child(2){
+    animation-delay: 5s;
+}
+.slid:nth-child(3){
+    animation-delay: 10s;
+}
+.slid:nth-child(4){
+    animation-delay: 15s;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.instagram-continue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    background-color: white;
+    width: 100%;
+   
+   
+}
+
+.logo{
+    padding: 3rem;
+}
+
+.text{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 29rem;
+    padding: 0 3rem  ;
+    
+}
+
+.group{
+   display: flex; 
+   justify-content: start;
+   align-items: center;
+   background-color: rgb(250,250,250);
+   border: 1px solid lightgray;
+   margin: 0.3rem 0;
+   height: 3.5rem;
+   width: 100%;
+   border-radius: 0.3rem;
+   color: dimgrey;
+   
+   
+}
+
+.button{
+    background-color: rgb(178,223,252);
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+    margin: 0.7rem 0;
+    height: 2.5rem;
+    font-weight: bold;
+    font-size: 16px;  
+    color: white;
+    border-radius: 0.3rem;
+    
+
+}
+
+
+.opcoes{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 0;
+    
+       
+}
+
+.arranjo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.ou{
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+    color: dimgrey;
+    font-weight: bold;
+}
+
+.line{
+    border-bottom: 2px solid lightgray;
+    width: 100%;
+   
+
+}
+
+.descricao{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 1rem;
+    color: rgb(56,81,133);
+    
+}
+
+.descricao:nth-child(1){
+font-weight: bold;
+}
+
+
+.facebook{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    background: white;
+    margin-top: 1.5rem;
+    
+}
+
+.logo-facebook{
+    
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: cover;
+    border-radius: 0.5rem; 
+    background-image: url(./IMG/5-logo\ facebook.png);
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6rem;
+    border: 1px solid lightgray;
+    background-color: white;
+    margin: 1rem;
+   }
+
+
+.getTheApp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.donwload{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; 
+     }
+
+.appDonwload{
+    width: 11rem;
+    height: 3rem;
+    background-size: cover;
+    border-radius: 0.5rem; 
+    margin: 1rem;
+
+}
+
+.appDonwload:nth-child(1){
+    background-image: url(./IMG/3-app1.png);
+}
+
+.appDonwload:nth-child(2){
+    background-image: url(./IMG/4-app2.png);
+}
+
+@media (max-width:800px){
+    .instagram-phone{
+        display: none;
+    }
+}
